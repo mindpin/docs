@@ -1,0 +1,3 @@
+[submodule "template/lily"]
+	path = template/lily
+	url = https://github.com/mindpin/lily.git
