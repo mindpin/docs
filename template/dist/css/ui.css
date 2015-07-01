@@ -3020,8 +3020,8 @@ a.btn, button.btn, input[type=submit].btn {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../../lily/fonts/fontawesome-webfont.eot?v=4.2.0");
-  src: url("../../lily/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../../lily/fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../../lily/fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../../lily/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
+  src: url("../../fonts/fontawesome-webfont.eot?v=4.2.0");
+  src: url("../../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../../fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../../fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 .fa {
@@ -4675,8 +4675,8 @@ a.btn, button.btn, input[type=submit].btn {
 
 @font-face {
   font-family: "Futura-Condensed";
-  src: url("../../lily/fonts/futura/Futura-Condensed.eot");
-  src: local("☺"), url("../../lily/fonts/futura/Futura-Condensed.woff") format("woff"), url("../../lily/fonts/futura/Futura-Condensed.ttf") format("truetype"), url("../../lily/fonts/futura/Futura-Condensed.svg") format("svg");
+  src: url("../../fonts/futura/Futura-Condensed.eot");
+  src: local("☺"), url("../../fonts/futura/Futura-Condensed.woff") format("woff"), url("../../fonts/futura/Futura-Condensed.ttf") format("truetype"), url("../../fonts/futura/Futura-Condensed.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
