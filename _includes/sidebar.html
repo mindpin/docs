@@ -1,0 +1,31 @@
+{% for cat in site.data.categories %}
+  {% assign key = cat[0] %}
+  {% assign value = cat[1] %}
+  <div class='category'>
+    <div class='name'>
+      <h4><a href="{{ key | downcase | replace:' ','-' | prepend:'categories/' | prepend: site.baseurl }}">{{ value.name }}</a></h4>
+    </div>
+    <div class='articles'>
+      {% for article in site.articles %}
+        {% unless article.parent %}
+          {% for art_cat in article.categories %}
+            {% if key == art_cat %}
+              <div class='article'> 
+                <a href="{{ site.baseurl }}articles/{{ article.title }}.html">{{ article.reader-title }}</a>
+                <div class='subs'>
+                  {% for sub_article in site.articles %}
+                    {% if sub_article.parent == article.title %}
+                      <div class='sub'>
+                        <a href='{{ site.baseurl }}articles/{{ sub_article.title }}.html'>{{ sub_article.reader-title }}</a>
+                      </div>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+{% endfor %}

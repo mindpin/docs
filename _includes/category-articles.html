@@ -1,0 +1,24 @@
+<h1>Category: {{ page.title }}</h1>
+
+<div class='articles'>
+  {% for article in site.articles %}
+    {% unless article.parent %}
+      {% for art_cat in article.categories %}
+        {% if page.title == art_cat %}
+          <div class='article'> 
+            <a href="{{ site.baseurl }}articles/{{ article.title }}.html">{{ article.reader-title }}</a>
+            <div class='subs'>
+              {% for sub_article in site.articles %}
+                {% if sub_article.parent == article.title %}
+                  <div class='sub'>
+                    <a href='{{ site.baseurl }}articles/{{ article.title }}.html'>{{ sub_article.reader-title }}</a>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% endunless %}
+  {% endfor %}
+</div>

@@ -1,0 +1,11 @@
+<h1>Article: {{ page.reader-title }}</h1>
+{{ content }}
+<div class='subs'>
+  {% for sub_article in site.articles %}
+    {% if sub_article.parent == page.title %}
+      <div class='sub'>
+        <a href='{{ site.baseurl }}articles/{{ article.title }}.html'>{{ sub_article.reader-title }}</a>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
