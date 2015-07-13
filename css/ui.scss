@@ -3,9 +3,9 @@
 ---
 @charset "utf-8";
 
-$futura-font-path: "../template/fonts/futura";
-$fa-font-path: "../template/fonts";
-$source-code-font-path: "../template/fonts/source-code";
+$futura-font-path: "../fonts/futura";
+$fa-font-path: "../fonts";
+$source-code-font-path: "../fonts/source-code";
 
 @import "../template/lily/css/lily.scss";
 @import "syntax-highlighting";
