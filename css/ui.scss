@@ -34,6 +34,13 @@ body {
 .sidebar {
   margin-top: 30px;
   margin-bottom: 30px;
+  h3.site {
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 40px;
+    a{ color: #555; }
+  }
+
   .category {
     position: relative;
     margin-bottom: 20px;
@@ -90,6 +97,11 @@ body {
     margin-bottom: 20px;
     line-height: 40px;
   }
+  h3, h4{
+    margin-bottom: 20px;
+    line-height: 40px;
+    font-weight: bold;
+  }
   p {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -100,12 +112,6 @@ body {
 
 .footer {
   margin-bottom: 100px;
-}
-
-.main.category-articles {
-  .articles .article .subs {
-    margin-left: 30px;
-  }
 }
 
 .main {
@@ -143,7 +149,6 @@ body {
   }
 
   ul {
-    counter-reset: li;
     list-style: none;
     position: relative;
     padding-bottom: 10px;
@@ -155,17 +160,17 @@ body {
       margin-bottom: 5px;
 
       &:before {
-        content: counter(li);
-        counter-increment: li;
+        content: "\f111";
         position: absolute;
         top:0;left:0;height:100%;width:30px;
         padding:0 10px 0 0 ;
         color: mix(lighten($area-info, 10%), #ccc, 60%);
-        font-size: 22px;
+        font-size: 10px;
         font-weight: bold;
         line-height: 32px;
         text-align: right;
         border-right: solid 1px #ddd;
+        font-family: FontAwesome;
       }
 
       p {
@@ -173,5 +178,89 @@ body {
         margin-bottom: 10px;
       }
     }
+  }
+}
+
+.main.github-account {
+  ul {
+    a.repo {
+      display: block;
+      margin-bottom: 10px;
+    }
+    p.desc {
+      color: #666;
+      max-width: 600px;
+      line-height: 24px;
+    }
+  }
+
+  a.see-github {
+    display: block;
+    margin-bottom: 20px;
+    color: #999;
+    position: relative;
+    top: -20px;
+    i {
+      width:30px;
+      padding-right: 10px;
+      text-align: right;
+    }
+  }
+}
+
+.main.repo {
+  a.see-github {
+    display: block;
+    margin-bottom: 20px;
+    color: #999;
+    position: relative;
+    top: -20px;
+    i {
+      width:30px;
+      padding-right: 10px;
+      text-align: right;
+    }
+  }
+
+  .repo-desc {
+    padding: 15px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    // background-color: #f2f7f9;
+    background-color: #fafafa;
+  }
+
+  .baseinfo {
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    .info {
+      @include clearfix;
+      margin-bottom: 5px;
+      .k {
+        float: left;
+        width: 150px;
+        text-align: right;
+        color: #999;
+      }
+      .v {
+        float: left;
+        .lang {
+          color: darken(red, 15%);
+          float: left;
+          padding-left: 10px;
+          padding-right: 10px;
+          border-right: solid 1px #ddd;
+          &:first-child {padding-left: 0;}
+          &:last-child {border-right:0 none;}
+        }
+      }
+    }
+  }
+
+  ul.skills .skill {
+    font-weight: bold;
   }
 }

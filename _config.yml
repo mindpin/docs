@@ -4,13 +4,17 @@ baseurl: "/docs" # the subpath of your site, e.g. /blog/
 markdown: redcarpet
 redcarpet:
   extensions:
+  - no_intra_emphasis
   - fenced_code_blocks
+  - autolink
+  - tables
+  - with_toc_data
   - footnotes
 
 collections:
-  articles:
+  repos:
     output: true
-    permalink: articles/:title.html
-  categories:
+    permalink: repos/:title.html
+  github_accounts:
     output: true
-    permalink: categories/:path/index.html
+    permalink: github-accounts/:path/index.html

@@ -1,29 +1,20 @@
-{% for cat in site.data.categories %}
-  {% assign key = cat[0] %}
-  {% assign value = cat[1] %}
+<h3 class='site'><a href='{{ site.baseurl }}/rnd'>研发资料</a></h3>
+
+{% for account in site.data.github_accounts %}
+  {% assign key = account[0] %}
+  {% assign value = account[1] %}
   <div class='category'>
     <div class='name'>
-      <h4><a href="{{ site.baseurl }}/categories/{{ key | downcase | replace:' ','-' }}">{{ value.name }}</a></h4>
+      <h4><a href="{{ site.baseurl }}/github-accounts/{{ key | downcase | replace:' ','-' }}">{{ value.name }}</a></h4>
     </div>
     <div class='articles'>
-      {% for article in site.articles %}
-        {% unless article.parent %}
-          {% for art_cat in article.categories %}
-            {% if key == art_cat %}
-              <div class='article'> 
-                <a href="{{ site.baseurl }}/articles/{{ article.title }}.html">{{ article.reader-title }}</a>
-                <div class='subs'>
-                  {% for sub_article in site.articles %}
-                    {% if sub_article.parent == article.title %}
-                      <div class='sub'>
-                        <a href='{{ site.baseurl }}/articles/{{ sub_article.title }}.html'>{{ sub_article.reader-title }}</a>
-                      </div>
-                    {% endif %}
-                  {% endfor %}
-                </div>
-              </div>
-            {% endif %}
-          {% endfor %}
+      {% for repo in site.repos %}
+        {% unless repo.parent %}
+          {% if key == repo.account %}
+            <div class='article'> 
+              <a href="{{ site.baseurl }}/articles/{{ repo.title }}.html">{{ repo.title }}</a>
+            </div>
+          {% endif %}
         {% endunless %}
       {% endfor %}
     </div>

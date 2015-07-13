@@ -1,0 +1,22 @@
+<h1>
+  <i class='fa fa-github'></i>
+  <span>github.com/{{ page.title }}</span>
+</h1>
+
+<a class='see-github' href='https://github.com/{{ page.title }}' target='_blank'>
+  <i class='fa fa-chevron-right'></i>
+  <span>访问 github 页面</span>
+</a>
+
+<ul>
+  {% for repo in site.repos %}
+    {% unless repo.parent %}
+      {% if page.title == repo.account %}
+        <li>
+          <a class='repo' href="{{ site.baseurl }}/repos/{{ repo.title }}.html">{{ repo.title }}</a>
+          <p class='desc'>{{ repo.desc }}</p>
+        </li>
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
+</ul>
