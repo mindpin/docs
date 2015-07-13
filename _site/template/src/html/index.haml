@@ -1,0 +1,98 @@
+!!!
+%html{:lang => :zh}
+  %head
+    %title mindpin docs
+    %meta{:'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'}
+
+    %link{:rel => 'stylesheet', :href => '../css/ui.css'}
+
+  %body.app
+    .header
+      .container
+        .row
+          .col-pad-12
+            .site 
+              %span.s0 MINDPIN 
+              %span.s1 Documents
+
+    .container
+      .row
+        .sidebar.col-pad-3
+          .category
+            .name 总览
+            .articles
+              .article
+                %a{:href => 'javascript:;'} 这是一个模板
+              .article
+                %a{:href => 'javascript:;'} 团队概述
+              .article
+                %a{:href => 'javascript:;'} 产品线简介
+
+          .category
+            .name img4ye
+            .articles
+              .article
+                %a{:href => 'javascript:;'} 在线服务
+              .article
+                %a{:href => 'javascript:;'} 浏览器插件
+              .article
+                %a{:href => 'javascript:;'} Upload API
+                .subs
+                  .sub
+                    %a{:href => 'javascript:;'} Ruby API
+                    %a{:href => 'javascript:;'} JS API
+
+
+          .category
+            .name slider
+            .articles
+              .article
+                %a{:href => 'javascript:;'} 实现原理
+              .article
+                %a{:href => 'javascript:;'} 展示样例
+                .subs
+                  .sub
+                    %a{:href => 'javascript:;'} 简单图文混排
+                    %a{:href => 'javascript:;'} 复杂图文混排
+                    %a{:href => 'javascript:;'} 模式复用
+                    %a{:href => 'javascript:;'} 对话泡泡
+              .article
+                %a{:href => 'javascript:;'} 技术实现
+
+        .main.col-pad-9
+          %h1 这是一个模板
+
+          %h2 模板的用途是什么？
+          %p 我们正在准备建立 MINDPIN TEAM 的在线帮助文档和技术参考页面。这个模板将被用于这个页面的展现。
+
+          %h2 模板的组成部分
+          %p 模板由下面这几部分构成：
+
+          %ul
+            %li 页头
+            %li 左侧导航栏
+            %li 文章区域
+            %li 页脚
+
+          %h2 特定要素
+          %p 模板包含一些特定要素，每种要素都有固定的样式：
+          %ul
+            %li 
+              %a{:href => 'javascript:;'} 各级标题
+            %li
+              %a{:href => 'javascript:;'} 正文
+            %li
+              %a{:href => 'javascript:;'} 无序列表
+            %li
+              %a{:href => 'javascript:;'} 有序列表
+            %li
+              %a{:href => 'javascript:;'} <strong>代码段</strong>
+            %li
+              %a{:href => 'javascript:;'} 链接
+
+
+      .row
+        .footer.col-pad-12
+          .team ©2015 MINDPIN TEAM.
+          %a.link{:href => 'http://mindpin.com', :target => '_blank'} http://mindpin.com

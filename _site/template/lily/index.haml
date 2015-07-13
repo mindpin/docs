@@ -1,0 +1,43 @@
+:ruby
+  require 'haml-coderay'
+  # Haml::Filters::CodeRay.encoder_options = { :css => :class }
+
+  def render_file(filename)
+    contents = File.read filename
+    Haml::Engine.new(contents).render
+  end
+
+!!!
+%html{:lang => :zh}
+  %head
+    %meta{:'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    %meta{:name => 'viewport', :content => 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'}
+    %title Lily
+
+    %link{:media => 'screen', :rel => 'stylesheet', :type => 'text/css', :href => 'css/lily.css'}
+
+  %body.lily-example-doc
+    .doc-head
+      .container
+        .row
+          .col-pad-2
+            .lily-logo
+          .col-pad-10
+            %h1 Lily {CSS}
+            %p 基础元素外观，网格系统，有用的样式和函数，以及 HTML 最佳实践。
+
+
+    .container
+      .row
+        .col-desk-9
+          = render_file 'example/_lily.haml'
+          = render_file 'example/_overflow.haml'
+          = render_file 'example/_grid.haml'
+          = render_file 'example/_typography.haml'
+          = render_file 'example/_consts.haml'
+          = render_file 'example/_buttons.haml'
+        .col-desk-3.-on-dev
+          我是导航菜单的占位文字
+
+    / %script{:type => 'text/javascript', :src => 'ui/lib/jquery-2.1.0.min.js'}
+    / %script{:type => 'text/javascript', :src => 'ui/ui.js'}

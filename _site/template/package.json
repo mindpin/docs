@@ -1,0 +1,17 @@
+{
+  "name": "mindpin-help-template",
+  "version": "0.0.1",
+  "description": "mindpin help template",
+  
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "gulp": "^3.8.10",
+    "gulp-util": "^3.0.1",
+    "gulp-concat": "^2.3.4",
+    "gulp-sourcemaps": "^1.2.4",
+    "gulp-coffee": "^2.2.0",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-ruby-haml": "^0.0.3",
+    "gulp-plumber": "^0.6.6"
+  }
+}
