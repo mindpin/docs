@@ -38,16 +38,14 @@
   </div>
 </div>
 
-<h4>隶属于下列产品线</h4>
-<ul>
-  {% if page.threads %}
+{% if page.threads %}
+  <h4>隶属于下列产品线</h4>
+  <ul>
     {% for thread in page.threads %}
       <li class='thread'>{{ thread }}</li>
     {% endfor %}
-  {% else %}
-    <li class='thread'>无</li>
-  {% endif %}
-</ul>
+  </ul>
+{% endif %}
 
 <h4>相关技能</h4>
 <ul class='skills'>

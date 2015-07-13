@@ -2,4 +2,5 @@
 ---
 
 jQuery(document).on 'page:change', ->
-  console.log 1
+  jQuery('.main.repo a').each ->
+    jQuery(this).attr 'target', '_blank'
