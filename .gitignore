@@ -1,7 +1,3 @@
-_site/template
-_site/Gemfile
-_site/Gemfile.lock
-_site/README.md
-
+_site
 .sass-cache
 node_modules
