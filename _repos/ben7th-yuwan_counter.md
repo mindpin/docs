@@ -9,9 +9,8 @@ updated: 2015-07-13
 last-commit: e909a4e
 type: lib
 alternative: false
-languages: [coffeescript, sass]
 
 skills: [gulp, coffeescript, sass, jquery]
-thread: false
+threads: false
 design-usage: 在斗鱼的几个直播间进行鱼丸/酬勤答谢，并同时采集聊天记录，供后台分析使用。
 ---

@@ -28,7 +28,6 @@ bundle exec jekyll serve -H 0.0.0.0
 - last-commit: 最后一次 commit 的 id
 - type: 工程类型 （项目 project , 库 lib , 演示 demo , 文档汇总 doc）
 - alternative: 是否有替代方案
-- languages: 主要编程语言
 - skills: 开发此工程需要的技能
-- thread: 隶属于哪条主线，例如：属于 img4ye 就写 [img4ye]
+- threads: 隶属于哪条主线，例如：属于 img4ye 就写 [img4ye]
 - design-usage: 最初的设计用途

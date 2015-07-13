@@ -9,10 +9,9 @@ updated: 2015-06-16
 last-commit: 0b1b6e3
 type: project
 alternative: false
-languages: [Javascript, css]
 
 skills: [chrome-plugin-dev, javascript, css]
-thread: false
+threads: false
 design-usage: 给经常使用新浪微博的人使用（主要是团队成员），以改善访问体验。
 ---
 
