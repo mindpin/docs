@@ -78,4 +78,5 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  jekyll-coffeescript
   sanitize
