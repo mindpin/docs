@@ -1,5 +1,11 @@
 baseurl: "/docs" # the subpath of your site, e.g. /blog/
 
+exclude:
+- Gemfile
+- Gemfile.lock
+- README.md
+- template
+
 # Build settings
 markdown: redcarpet
 redcarpet:
