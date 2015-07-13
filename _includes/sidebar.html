@@ -12,7 +12,7 @@
         {% unless repo.parent %}
           {% if key == repo.account %}
             <div class='article'> 
-              <a href="{{ site.baseurl }}/articles/{{ repo.title }}.html">{{ repo.title }}</a>
+              <a href="{{ site.baseurl }}/repos/{{ repo.title | replace:'_','-'}}.html">{{ repo.title }}</a>
             </div>
           {% endif %}
         {% endunless %}

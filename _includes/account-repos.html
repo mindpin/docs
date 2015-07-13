@@ -13,7 +13,7 @@
     {% unless repo.parent %}
       {% if page.title == repo.account %}
         <li>
-          <a class='repo' href="{{ site.baseurl }}/repos/{{ repo.title }}.html">{{ repo.title }}</a>
+          <a class='repo' href="{{ site.baseurl }}/repos/{{ repo.title | replace:'_','-' }}.html">{{ repo.title }}</a>
           <p class='desc'>{{ repo.desc }}</p>
         </li>
       {% endif %}

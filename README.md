@@ -1,13 +1,7 @@
 # help
 团队帮助文档和技术参考
 
+使用 jekyll 构建
 
-### 目录结构
-
-template
-
-这里是样式模板
-
-rnd
-
-研发相关资料，整理了过去积累的代码和组件的摘要说明
+发布方法参考：  
+http://blog.nitrous.io/2013/08/30/using-jekyll-plugins-on-github-pages.html

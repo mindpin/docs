@@ -5,11 +5,11 @@ title: better-weibo-v6
 account: ben7th
 desc: 新浪微博 2014 年发布 v6 版之后，样式让人很不习惯。这是一个 chrome 插件，用来优化样式和去除广告。
 created: 2014-10-25
-updated: 2015-07-16
-last-commit: 0b1b6e
+updated: 2015-06-16
+last-commit: 0b1b6e3
 type: project
 alternative: false
-languages: [javascript, css]
+languages: [Javascript, css]
 
 skills: [chrome-plugin-dev, javascript, css]
 thread: false

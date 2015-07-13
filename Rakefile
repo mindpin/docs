@@ -27,6 +27,7 @@
         system "git commit -am #{message.shellescape}"
         system "git push origin gh-pages --force"
         system "git checkout master"
+        system "git submodule update"
         system "echo yolo"
       end
     end
