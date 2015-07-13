@@ -31,3 +31,8 @@ bundle exec jekyll serve -H 0.0.0.0
 - skills: 开发此工程需要的技能
 - threads: 隶属于哪条主线，例如：属于 img4ye 就写 [img4ye]
 - design-usage: 最初的设计用途
+
+
+### 其他参考资料
+
+http://stackoverflow.com/questions/28100220/jekyll-display-collection-by-category

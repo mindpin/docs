@@ -14,3 +14,8 @@ skills: [gulp, coffeescript, sass, jquery]
 threads: false
 design-usage: 编写一个以 IT 概念为主题的类似 Doddle God 的小游戏
 ---
+
+#### 值得参考的实践
+
+1. state-machine.min.js 的使用
+2. 场景平滑切换

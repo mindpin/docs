@@ -15,6 +15,16 @@ threads: [knowledge-camp]
 design-usage: 用来支持 CSS 教学场景的构建
 ---
 
-### demo 页面
+#### demo 页面
 
 http://ben7th.github.io/css-checker-prototype/
+
+#### 值得参考的实践
+
+1. css 语法分析库
+2. 步进式的教学场景
+
+#### 后续规划
+
+1. 更完整的完成这个场景
+2. 汇入 knowledge-camp 产品线

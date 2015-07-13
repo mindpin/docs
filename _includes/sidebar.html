@@ -8,14 +8,11 @@
       <h4><a href="{{ site.baseurl }}/github-accounts/{{ key | downcase | replace:' ','-' }}">{{ value.name }}</a></h4>
     </div>
     <div class='articles'>
-      {% for repo in site.repos %}
-        {% unless repo.parent %}
-          {% if key == repo.account %}
-            <div class='article'> 
-              <a href="{{ site.baseurl }}/repos/{{ repo.title | replace:'_','-'}}.html">{{ repo.title }}</a>
-            </div>
-          {% endif %}
-        {% endunless %}
+      {% assign repos = site.repos | where: 'account', key %}
+      {% for repo in repos %}
+        <div class='article'> 
+          <a href="{{ site.baseurl }}/repos/{{ repo.title | replace:'_','-'}}.html">{{ repo.title }}</a>
+        </div>
       {% endfor %}
     </div>
   </div>

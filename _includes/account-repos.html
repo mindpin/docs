@@ -9,14 +9,11 @@
 </a>
 
 <ul>
+  {% assign repos = site.repos | where: 'account', page.title %}
   {% for repo in site.repos %}
-    {% unless repo.parent %}
-      {% if page.title == repo.account %}
-        <li>
-          <a class='repo' href="{{ site.baseurl }}/repos/{{ repo.title | replace:'_','-' }}.html">{{ repo.title }}</a>
-          <p class='desc'>{{ repo.desc }}</p>
-        </li>
-      {% endif %}
-    {% endunless %}
+    <li>
+      <a class='repo' href="{{ site.baseurl }}/repos/{{ repo.title | replace:'_','-' }}.html">{{ repo.title }}</a>
+      <p class='desc'>{{ repo.desc }}</p>
+    </li>
   {% endfor %}
 </ul>

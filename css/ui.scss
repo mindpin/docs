@@ -86,6 +86,7 @@ body {
   margin-bottom: 30px;
   font-size: 16px;
   color: #484848;
+  line-height: 24px;
 
   h1 {
     margin-top: 0;
@@ -117,16 +118,7 @@ body {
 .main {
   ol {
     counter-reset: li;
-    list-style: none;
-    position: relative;
-    padding-bottom: 10px;
-    padding-left: 0;
-    
-    li {
-      padding: 5px 0 5px 55px;
-      position: relative;
-      margin-bottom: 5px;
-
+    > li {
       &:before {
         content: counter(li);
         counter-increment: li;
@@ -136,29 +128,15 @@ body {
         color: mix(lighten($area-info, 10%), #ccc, 60%);
         font-size: 22px;
         font-weight: bold;
-        line-height: 32px;
+        line-height: 34px;
         text-align: right;
         border-right: solid 1px #ddd;
-      }
-
-      p {
-        margin-top: 0;
-        margin-bottom: 10px;
       }
     }
   }
 
   ul {
-    list-style: none;
-    position: relative;
-    padding-bottom: 10px;
-    padding-left: 0;
-    
     li {
-      padding: 5px 0 5px 55px;
-      position: relative;
-      margin-bottom: 5px;
-
       &:before {
         content: "\f111";
         position: absolute;
@@ -167,16 +145,35 @@ body {
         color: mix(lighten($area-info, 10%), #ccc, 60%);
         font-size: 10px;
         font-weight: bold;
-        line-height: 32px;
+        line-height: 34px;
         text-align: right;
         border-right: solid 1px #ddd;
         font-family: FontAwesome;
       }
+    }
+  }
 
-      p {
-        margin-top: 0;
+  ol, ul {
+    list-style: none;
+    position: relative;
+    padding-left: 0;
+    margin-bottom: 20px;
+
+    li {
+      padding: 5px 0 5px 55px;
+      position: relative;
+      margin-bottom: 5px;
+
+      > ol, > ul {
+        position: relative;
+        top: 15px;
         margin-bottom: 10px;
       }
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 10px;
     }
   }
 }
@@ -260,7 +257,19 @@ body {
     }
   }
 
-  ul.skills .skill {
-    font-weight: bold;
+  .skills {
+    @include clearfix;
+    .skill {
+      float: left;
+      border-right: solid 1px #ddd;
+      padding:0 10px;
+      color: darken(red, 15%);
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        border-right: 0 none;
+      }
+    }
   }
 }
