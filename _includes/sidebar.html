@@ -10,8 +10,8 @@
     <div class='articles'>
       {% assign repos = site.repos | where: 'account', key %}
       {% for repo in repos %}
-        <div class='article'> 
-          <a href="{{ site.baseurl }}/repos/{{ repo.title | replace:'_','-'}}.html">{{ repo.title }}</a>
+        <div class='article'>
+          <a href="{{ site.baseurl }}/repos/{{ repo.title | replace:'_','-' | downcase}}.html">{{ repo.title }}</a>
         </div>
       {% endfor %}
     </div>
