@@ -10,8 +10,13 @@
     <div class='articles'>
       {% assign repos = site.repos | where: 'account', key %}
       {% for repo in repos %}
-        <div class='article'> 
-          <a href="{{ site.baseurl }}/repos/{{ repo.title | replace:'_','-'}}.html">{{ repo.title }}</a>
+        {% if repo.last-commit %}
+          {% assign klass = 'article reviewed' %}
+        {% else %}
+          {% assign klass = 'article' %}
+        {% endif %}
+        <div class='{{ klass }}'> 
+          <a href="{{ site.baseurl }}/repos/{{ repo.title | downcase | replace:'_','-' }}.html">{{ repo.title }}</a>
         </div>
       {% endfor %}
     </div>

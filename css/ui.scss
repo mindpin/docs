@@ -65,6 +65,12 @@ body {
       line-height: 40px;
     }
     .articles {
+      .article {
+        opacity: 0.5;
+        &.reviewed {
+          opacity: 1;
+        }
+      }
       .article a{
         display: block;
         color: #666;
@@ -136,7 +142,7 @@ body {
   }
 
   ul {
-    li {
+    > li {
       &:before {
         content: "\f111";
         position: absolute;
@@ -164,6 +170,8 @@ body {
       position: relative;
       margin-bottom: 5px;
 
+      word-break: break-all;
+
       > ol, > ul {
         position: relative;
         top: 15px;
@@ -175,6 +183,14 @@ body {
       margin-top: 0;
       margin-bottom: 10px;
     }
+  }
+
+  img {
+    max-width: 100%;
+    border:solid 1px #ddd;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #FFF;
   }
 }
 
