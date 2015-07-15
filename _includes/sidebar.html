@@ -15,8 +15,8 @@
         {% else %}
           {% assign klass = 'article' %}
         {% endif %}
-        <div class='{{ klass }}'> 
-          <a href="{{ site.baseurl }}/repos/{{ repo.title | downcase | replace:'_','-' }}.html">{{ repo.title }}</a>
+        <div class='{{ klass }}'>
+          <a href="{{ site.baseurl }}/repos/{{ repo.title | downcase | replace:'_','-' | replace:'.','-' }}.html">{{ repo.title }}</a>
         </div>
       {% endfor %}
     </div>
