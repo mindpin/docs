@@ -289,3 +289,22 @@ body {
     }
   }
 }
+
+.page-search {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top:dashed 1px #ddd;
+  .control {
+    margin-bottom: 20px;
+    input {
+      max-width: 300px;
+    }
+  }
+  .list {
+    .entry {
+      a {display:block;margin-bottom:5px;}
+      .desc {color:#999;}
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -15,6 +15,10 @@ threads: false
 design-usage: 给经常使用新浪微博的人使用（主要是团队成员），以改善访问体验。
 ---
 
+#### 效果
+
+![](http://i.teamkn.com/i/tH8cqiwY.png?imageMogr2/thumbnail/500x)
+
 #### 值得参考的实践
 
 1. 如果要开发类似的仅仅改进第三方网站样式的 chrome 插件，这个工程值得参考；

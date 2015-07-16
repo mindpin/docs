@@ -19,6 +19,8 @@ design-usage: 用来支持 CSS 教学场景的构建
 
 http://ben7th.github.io/css-checker-prototype/
 
+![](http://i.teamkn.com/i/sksew00Y.png)
+
 #### 值得参考的实践
 
 1. css 语法分析库

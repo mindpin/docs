@@ -12,5 +12,5 @@ alternative: false
 
 skills: [jekyll, sublime-text-plugin, python]
 threads: false
-design-usage: 用来发布团队 wiki
+design-usage: 一开始是打算用它来发布团队 wiki. 然而并没有实际用起来。<br/>原因可能是操作体验不好，字符界面不易理解，加上有一些磁盘文件系统 IO 方面的 bug
 ---

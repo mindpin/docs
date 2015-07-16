@@ -1,0 +1,15 @@
+---
+---
+
+{
+  "entries": [
+    {% for repo in site.repos %}
+      {
+        "title": "{{ repo.title }}",
+        "desc": "{{ repo.desc }}",
+        "usage": "{{ repo.design-usage }}"
+      },
+    {% endfor %}
+    {}
+  ]
+}
