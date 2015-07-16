@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang='zh'>
+  <head>
+  <title>mindpin docs</title>
+  <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+  <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+  <link href='/docs/css/ui.css' rel='stylesheet'>
+
+  <script type='text/javascript' src='/docs/js/turbolinks.js'></script>
+  <script type='text/javascript' src='http://libs.useso.com/js/jquery/2.1.1/jquery.min.js'></script>
+
+  <script type='text/javascript' src='/docs/js/rx.lite.min.js'></script>
+  <script type='text/javascript' src='/docs/js/rx.jquery.min.js'></script>
+
+  <script type='text/javascript' src='/docs/js/ui.js'></script>
+</head>
+  <body class='app'>
+    <div class='header'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-pad-12'>
+        <a class='site' href='/docs/'>
+          <span class='s0'>MINDPIN</span>
+          <span class='s1'>Documents</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class='container'>
+      <div class='row'>
+        <div class='sidebar col-pad-3'>
+        </div>
+        <div class='main col-pad-9 repo'>
+          <h1>project: feedback</h1>
+
+<a class='see-github' href='https://github.com/ben7th/feedback' target='_blank'>
+  <i class='fa fa-chevron-right'></i>
+  <span>访问 github 页面</span>
+</a>
+
+<h4>基本信息</h4>
+
+<div class='repo-desc'>这是一个用来处理“问题反馈”的工程</div>
+
+<div class='baseinfo'>
+  <div class='info'>
+    <div class='k'>创建时间：</div>
+    <div class='v'>2012-04-16</div>
+  </div>
+  <div class='info'>
+    <div class='k'>最后提交时间：</div>
+    <div class='v'>2012-04-20</div>
+  </div>
+  <div class='info'>
+    <div class='k'>最新提交：</div>
+    <div class='v'>
+      <a href='https://github.com/ben7th/feedback/commit/9b45691' target='_blank'>9b45691</a>
+    </div>
+  </div>
+  <div class='info'>
+    <div class='k'>工程类型：</div>
+    <div class='v'>project</div>
+  </div>
+  <div class='info'>
+    <div class='k'>替代方案：</div>
+    
+      <div class='v'>没有</div>
+    
+  </div>
+</div>
+
+
+
+<h4>相关技能</h4>
+<div class='skills'>
+  
+    <div class='skill'>rails</div>
+  
+    <div class='skill'>mysql</div>
+  
+    <div class='skill'>css</div>
+  
+    <div class='skill'>javascript</div>
+  
+</div>
+
+<h4>设计用途</h4>
+<p>
+  最初的设计目的是做一个简单的工程用来收集问题反馈。<br/>不过没有继续开发下去。
+</p>
+
+
+<h4 id="用途">用途</h4>
+
+<p><img src="http://i.teamkn.com/i/NqeqJyhL.png" alt=""></p>
+
+<p>这应该是一个实验性质项目。打算把它做成一个可配置的问题报告模块。</p>
+
+<h4 id="开发环境">开发环境</h4>
+
+<p>2012 年最后一次提交时，版本库里的代码还是基于 rails 3.x 的。<br>
+为了在开发环境跑起来，ben7th 修改了 Gemfile，将依赖更改为 rails 4 并进行了一些兼容性修改。<br>
+目前开发环境应该是可以直接跑起来的。</p>
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="c"># 签出代码</span>
+<span class="c"># 修改 config/database.yml</span>
+
+bundle
+rake db:create
+rake db:migrate
+rails s -b 0.0.0.0
+</code></pre></div>
+<h4 id="计划">计划</h4>
+
+<ol>
+<li>如果有时间的话，把它做成 rails engine</li>
+<li>目前它是使用 mysql 数据库的。需要改成使用 mongodb</li>
+<li>应该可以作为练手任务来做</li>
+</ol>
+
+        </div>
+      </div>
+      <div class='row'>
+  <div class='footer col-pad-12'>
+    <div class='team'>&copy;2015 MINDPIN TEAM.</div>
+    <a class='link' href='http://mindpin.com' target='_blank'>http://mindpin.com</a>
+  </div>
+</div>
+    </div>
+  </body>
+</html>

@@ -1,15 +1,894 @@
----
----
-
 {
   "entries": [
-    {% for repo in site.repos %}
+    
       {
-        "title": "{{ repo.title }}",
-        "desc": "{{ repo.desc }}",
-        "usage": "{{ repo.design-usage }}"
+        "title": "4ye",
+        "desc": "播客模块。基于 rails engine 实现。目前代码并不完整。",
+        "usage": "放在某个工程里作为播客模块，但是忘记是对应哪个工程了。"
       },
-    {% endfor %}
+    
+      {
+        "title": "better-weibo-v6",
+        "desc": "新浪微博 2014 年发布 v6 版之后，样式让人很不习惯。这是一个 chrome 插件，用来优化样式和去除广告。",
+        "usage": "给经常使用新浪微博的人使用（主要是团队成员），以改善访问体验。"
+      },
+    
+      {
+        "title": "chinese-typography",
+        "desc": "调用 www.youziku.com 服务的脚本，以及相关演示。目前存在加载延迟问题。",
+        "usage": "演示如何使用 youziku 的中文字体服务，并编写了一个较优化的脚本。"
+      },
+    
+      {
+        "title": "css-checker-prototype",
+        "desc": "一个用来检查 CSS 属性正确性的库，能够用来构建一些教学互动场景",
+        "usage": "用来支持 CSS 教学场景的构建"
+      },
+    
+      {
+        "title": "element-mix-game",
+        "desc": "类似涂鸦上帝（Doddle God）的一个游戏 demo，没完成。",
+        "usage": "编写一个以 IT 概念为主题的类似 Doddle God 的小游戏"
+      },
+    
+      {
+        "title": "feedback",
+        "desc": "这是一个用来处理“问题反馈”的工程",
+        "usage": "最初的设计目的是做一个简单的工程用来收集问题反馈。<br/>不过没有继续开发下去。"
+      },
+    
+      {
+        "title": "flappy-html5-bird",
+        "desc": "一个比较简单的 html5 实现的 flappy bird.",
+        "usage": "设计用途是作为演示范例，同时展示如何在不使用任何游戏开发框架的情况下编写简单游戏。<br/>当然，这样做的问题是很多的，如果为了编写非常健壮的游戏，还是应该使用开发框架。"
+      },
+    
+      {
+        "title": "github-resume",
+        "desc": "根据 github 账号生成可视化简历",
+        "usage": "以这个场景为例，编写一个用于处理数据加载和填充的前端框架（DataFiller）"
+      },
+    
+      {
+        "title": "jekyll-miniwiki",
+        "desc": "在 jekyll 的基础上，通过设计特定的文件组织结构，做成的一个小型 wiki 工具。<br/>需要结合 sublime text 2 的插件使用。",
+        "usage": "一开始是打算用它来发布团队 wiki. 然而并没有实际用起来。<br/>原因可能是操作体验不好，字符界面不易理解，加上有一些磁盘文件系统 IO 方面的 bug"
+      },
+    
+      {
+        "title": "mindivy",
+        "desc": "一个 HTML5 思维导图编辑器",
+        "usage": "用来发布团队 wiki"
+      },
+    
+      {
+        "title": "minecraft_mod",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "pie-auth",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "pie-repo",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "pin-service-lib",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "pie-ui",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "pin-2010",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "pin-app-adapter",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "pin-bugs",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "pin-config-manager",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "pin-discuss",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "pin-mindmap-editor",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "pin-mindmap-image-cache",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "pin-notes",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "pin-share",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "pin-user-auth",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "pin-v4-web-ui",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "pie-website",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "pin-workspace",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "rubycas-client-app-example",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "rubycas-server",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "worldcup-css-flags",
+        "desc": "",
+        "usage": ""
+      },
+    
+      {
+        "title": "yuwan_counter",
+        "desc": "一段运行在 chrome 浏览器控制台中的脚本。用来在斗鱼直播的直播间里进行自动鱼丸/酬勤答谢。并且把一些聊天信息保存到指定服务器上。",
+        "usage": "在斗鱼的几个直播间进行鱼丸/酬勤答谢，并同时采集聊天记录，供后台分析使用。"
+      },
+    
+      {
+        "title": "yuwan_counter_service",
+        "desc": "yuwan_counter 对应的后端服务，用来保存前端脚本采集到的聊天记录",
+        "usage": "在斗鱼的几个直播间进行鱼丸/酬勤答谢，并同时采集聊天记录，供后台分析使用。"
+      },
+    
+      {
+        "title": "4ye-collect-chrome-ext",
+        "desc": "作为 http://collect.4ye.me/ 服务的 chrome 插件",
+        "usage": "为 http://collect.4ye.me/ 服务做一个 chrome 插件，方便收集网址"
+      },
+    
+      {
+        "title": "4ye-mindivy",
+        "desc": "匿名的思维导图在线编辑器",
+        "usage": "可以匿名编辑导图并分享给别人，被人也可以继续编辑，有多版本控制"
+      },
+    
+      {
+        "title": "4ye.fm",
+        "desc": "播客站",
+        "usage": "用来放置团队录制的博客节目"
+      },
+    
+      {
+        "title": "Android-KCVideoView",
+        "desc": "视频播放组件",
+        "usage": "视频播放组件"
+      },
+    
+      {
+        "title": "CircleButton",
+        "desc": "实现了一个 android 圆形按钮组件",
+        "usage": "实现了一个 android 圆形按钮组件"
+      },
+    
+      {
+        "title": "CodeScanView",
+        "desc": "二维码扫描组件",
+        "usage": "二维码扫描组件<br/>https://github.com/mindpin/knowledge-camp/wiki/%E4%BA%8C%E7%BB%B4%E7%A0%81%E6%89%AB%E6%8F%8F"
+      },
+    
+      {
+        "title": "DataStatusHandler",
+        "desc": "数据状态切换组件",
+        "usage": "数据状态切换组件<br/>https://github.com/mindpin/knowledge-camp/wiki/%E6%95%B0%E6%8D%AE%E7%8A%B6%E6%80%81%E5%88%87%E6%8D%A2%E7%BB%84%E4%BB%B6"
+      },
+    
+      {
+        "title": "FileDownloaderManager",
+        "desc": "文件下载组件",
+        "usage": "文件下载组件<br/>https://github.com/mindpin/knowledge-camp/wiki/%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD%E7%BB%84%E4%BB%B6"
+      },
+    
+      {
+        "title": "ImageCrop",
+        "desc": "头像截取组件",
+        "usage": "头像截取组件<br/>https://github.com/mindpin/knowledge-camp/wiki/%E5%A4%B4%E5%83%8F%E6%88%AA%E5%8F%96"
+      },
+    
+      {
+        "title": "KCAuthenticator",
+        "desc": "登录验证组件",
+        "usage": "登录验证组件<br/>https://github.com/mindpin/knowledge-camp/wiki/%E7%99%BB%E5%BD%95%E9%AA%8C%E8%AF%81%E7%BB%84%E4%BB%B6"
+      },
+    
+      {
+        "title": "KCExtraImageView",
+        "desc": "图片行为包装组件",
+        "usage": "图片行为包装组件<br/>https://github.com/mindpin/knowledge-camp/wiki/%E5%9B%BE%E7%89%87%E8%A1%8C%E4%B8%BA%E5%8C%85%E8%A3%85%E7%BB%84%E4%BB%B6"
+      },
+    
+      {
+        "title": "KCRoundProgressBar",
+        "desc": "圆形进度条组件",
+        "usage": "圆形进度条组件<br/>https://github.com/mindpin/knowledge-camp/wiki/%E5%9C%86%E5%BD%A2%E8%BF%9B%E5%BA%A6%E6%9D%A1%E7%BB%84%E4%BB%B6"
+      },
+    
+      {
+        "title": "LoadingView",
+        "desc": "通用LOADING提示组件",
+        "usage": "通用LOADING提示组件<br/>https://github.com/mindpin/knowledge-camp/wiki/%E9%80%9A%E7%94%A8LOADING%E6%8F%90%E7%A4%BA%E7%BB%84%E4%BB%B6"
+      },
+    
+      {
+        "title": "MINDPIN_KCFlexScaleview",
+        "desc": "等比例缩放View组件",
+        "usage": "等比例缩放View组件<br/>https://github.com/mindpin/knowledge-camp/wiki/2014-04-22-%E7%AD%89%E6%AF%94%E4%BE%8B%E7%BC%A9%E6%94%BEView"
+      },
+    
+      {
+        "title": "MINDPIN_OrientationSensorImageView",
+        "desc": "实现重力感应可滚动视图组件",
+        "usage": "实现重力感应可滚动视图组件<br/>https://github.com/mindpin/knowledge-camp/wiki/%E9%87%8D%E5%8A%9B%E6%84%9F%E5%BA%94%E5%8F%AF%E6%BB%9A%E5%8A%A8%E8%A7%86%E5%9B%BE"
+      },
+    
+      {
+        "title": "NoticeManager",
+        "desc": "通知组件",
+        "usage": "通知组件<br/>https://github.com/mindpin/knowledge-camp/wiki/android-%E9%80%9A%E7%9F%A5%E7%BB%84%E4%BB%B6"
+      },
+    
+      {
+        "title": "PopTips",
+        "desc": "实现了一个 android 浮动框泡泡组件，用户点击view而触发一个浮动提示框，此浮动框泡泡组件是由矩形框和三角形箭头组成",
+        "usage": "实现了一个 android 浮动框泡泡组件，用户点击view而触发一个浮动提示框，此浮动框泡泡组件是由矩形框和三角形箭头组成"
+      },
+    
+      {
+        "title": "ShakeHandler",
+        "desc": "摇一摇组件",
+        "usage": "摇一摇组件<br/>https://github.com/mindpin/knowledge-camp/wiki/%E6%91%87%E4%B8%80%E6%91%87%E7%BB%84%E4%BB%B6"
+      },
+    
+      {
+        "title": "SlideWidget",
+        "desc": "底部滑出详情浮动框组件",
+        "usage": "底部滑出详情浮动框组件<br/>https://github.com/mindpin/knowledge-camp/wiki/%E5%BA%95%E9%83%A8%E6%BB%91%E5%87%BA%E8%AF%A6%E6%83%85%E6%B5%AE%E5%8A%A8%E6%A1%86%E7%BB%84%E4%BB%B6"
+      },
+    
+      {
+        "title": "TouchIdea",
+        "desc": "内容分享/讨论。",
+        "usage": "做一个比较有意思的内容商品分享讨论社区"
+      },
+    
+      {
+        "title": "acts-as-dag",
+        "desc": "用来表达有向无环图（DAG）的数据结构",
+        "usage": "用来表达有向无环图（DAG）的数据结构,被用在 knowledge-net-plan-store 和 knowledge-net-store"
+      },
+    
+      {
+        "title": "aliyun",
+        "desc": "aliyun oss 的 ruby api",
+        "usage": "aliyun oss 的 ruby api"
+      },
+    
+      {
+        "title": "android-4ye-web",
+        "desc": "四叶趣味编程客户端原型对应的服务端",
+        "usage": "四叶趣味编程客户端原型对应的服务端"
+      },
+    
+      {
+        "title": "android-flat-bubble",
+        "desc": "弹出浮动菜单组件 web demo",
+        "usage": "用 html 演示了需要做的 PopTips android 组件的效果"
+      },
+    
+      {
+        "title": "android-menudrawer",
+        "desc": "纵向抽屉导航组件",
+        "usage": "纵向抽屉导航组件<br/>https://github.com/mindpin/knowledge-camp/wiki/%E7%BA%B5%E5%90%91%E6%8A%BD%E5%B1%89%E5%AF%BC%E8%88%AA"
+      },
+    
+      {
+        "title": "anonymous-markdown-editor",
+        "desc": "匿名的 markdown 在线编辑器。",
+        "usage": "方便团队内部编写 markdown 文档"
+      },
+    
+      {
+        "title": "arts",
+        "desc": "存放与mindpin产品相关的logo，设计稿等",
+        "usage": "存放与mindpin产品相关的logo，设计稿等"
+      },
+    
+      {
+        "title": "beikong-eshare",
+        "desc": "eshare 内网标准版。",
+        "usage": "跟北控合作的产品 eshare"
+      },
+    
+      {
+        "title": "briefing",
+        "desc": "半周工作简报",
+        "usage": "放置工作周报，方便查看工作进度"
+      },
+    
+      {
+        "title": "buckets_demo",
+        "desc": "仿 dribbble.com 的 buckets demo",
+        "usage": "仿 dribbble.com 的 buckets，希望用于 slider"
+      },
+    
+      {
+        "title": "chatflow",
+        "desc": "对话泡泡流的 demo",
+        "usage": "演示对话泡泡流的效果"
+      },
+    
+      {
+        "title": "chromium-ext-img4ye",
+        "desc": "img4ye 的 chrome 插件",
+        "usage": "给 img4ye 做一个 chrome 插件，方便上传浏览器截图"
+      },
+    
+      {
+        "title": "chromium-ext-screenshot-demo",
+        "desc": "chrome 插件，截图上传至img.4ye.me",
+        "usage": "方便上传浏览器截图至img.4ye.me"
+      },
+    
+      {
+        "title": "cloud-like",
+        "desc": "公共点赞数据服务，问题驱动研发过程中开发的基础数据服务。",
+        "usage": "该服务提供 http api，方便其他项目借助该服务实现点赞功能"
+      },
+    
+      {
+        "title": "css-tutorials",
+        "desc": "css 教程应用",
+        "usage": "提供一种强互动性的 css 教程应用"
+      },
+    
+      {
+        "title": "docs",
+        "desc": "团队帮助文档和技术参考",
+        "usage": "记录团队帮助文档和技术参考"
+      },
+    
+      {
+        "title": "documents-store",
+        "desc": "为文档资源提供 MongoDB 下的持久化保存",
+        "usage": "为文档资源提供 MongoDB 下的持久化保存"
+      },
+    
+      {
+        "title": "edu-game-map-java-lib",
+        "desc": "edu-game-map java 解析库",
+        "usage": "用在 android 项目中来解析网状结构的图"
+      },
+    
+      {
+        "title": "edu-game-map",
+        "desc": "edu-game-map ruby 解析库",
+        "usage": "用在 rails 项目中来解析网状结构的图"
+      },
+    
+      {
+        "title": "eshare-verify",
+        "desc": "为 eshare 产品提供正版验证",
+        "usage": "为 eshare 产品提供正版验证"
+      },
+    
+      {
+        "title": "file-part-upload",
+        "desc": "为文件分段上传和存储提供后端支持的一个 Ruby Gem。目前用于 eshare 项目中。",
+        "usage": "为文件分段上传和存储提供后端支持的一个 Ruby Gem。目前用于 eshare 项目中"
+      },
+    
+      {
+        "title": "generic_controller",
+        "desc": "简化 controller 代码编写",
+        "usage": "简化 controller 代码编写"
+      },
+    
+      {
+        "title": "im-chat-parser-demo",
+        "desc": "QQ聊天记录解析演示",
+        "usage": "QQ聊天记录解析演示"
+      },
+    
+      {
+        "title": "im-chat-parser",
+        "desc": "QQ聊天记录解析库",
+        "usage": "QQ聊天记录解析库"
+      },
+    
+      {
+        "title": "image-4ye",
+        "desc": "image-4ye api ruby gem",
+        "usage": "image-4ye api ruby gem，方便其他rails项目上传图片到 img4ye"
+      },
+    
+      {
+        "title": "image-placeholder-service",
+        "desc": "图片占位服务",
+        "usage": "方便获取指定大小的图片用来占位"
+      },
+    
+      {
+        "title": "image-service-android-lib",
+        "desc": "image-service-android 核心逻辑抽取的库",
+        "usage": "image-service-android 核心逻辑抽取的库"
+      },
+    
+      {
+        "title": "image-service-android",
+        "desc": "image-service 的 android 客户端",
+        "usage": "image-service 的 android 客户端"
+      },
+    
+      {
+        "title": "image-service-java-lib",
+        "desc": "image-service-android 核心逻辑抽取的纯java库",
+        "usage": "image-service-android 核心逻辑抽取的纯java库"
+      },
+    
+      {
+        "title": "image-service",
+        "desc": "图床服务",
+        "usage": "图床服务"
+      },
+    
+      {
+        "title": "jobs",
+        "desc": "MINDPIN 招募页",
+        "usage": "MINDPIN 招募页"
+      },
+    
+      {
+        "title": "js-warrior",
+        "desc": "一个有趣的编程小游戏。用 javascript 代码控制勇者战斗过关，有时间的话我们希望给它增加更多的功能特性。",
+        "usage": "做一个比较新颖的编程教学互动"
+      },
+    
+      {
+        "title": "js-workflow-tree",
+        "desc": "这是一个js多级树状文档编辑组件，有简单流畅的体验。目前还需要添加更多特性。",
+        "usage": "演示多级树状文档组织形式的效果"
+      },
+    
+      {
+        "title": "justforim",
+        "desc": "通过修改openfire 的一些代码，达到自定义用户认证的逻辑，该项目作为自定义逻辑的服务端",
+        "usage": "通过修改openfire 的一些代码，达到自定义用户认证的逻辑，该项目作为自定义逻辑的服务端"
+      },
+    
+      {
+        "title": "kc-android-publish-service",
+        "desc": "kc-android 的APK管理服务",
+        "usage": "方便 kc-android 客户端的APK文件管理"
+      },
+    
+      {
+        "title": "kc-android-publish-uploader",
+        "desc": "打包发布 kc-android 的服务端",
+        "usage": "打包发布 kc-android 的服务端"
+      },
+    
+      {
+        "title": "kc-android",
+        "desc": "knowledge-camp 的 android 客户端",
+        "usage": "knowledge-camp 的 android 客户端"
+      },
+    
+      {
+        "title": "kcflip",
+        "desc": "文章摘要、详情折叠组件",
+        "usage": "文章摘要、详情折叠组件<br/>https://github.com/mindpin/knowledge-camp/wiki/%E6%96%87%E7%AB%A0%E6%91%98%E8%A6%81-%E8%AF%A6%E6%83%85%E6%8A%98%E5%8F%A0%E7%BB%84%E4%BB%B6"
+      },
+    
+      {
+        "title": "knowledge-camp",
+        "desc": "学科知识数据库",
+        "usage": "给黄职做的教学系统"
+      },
+    
+      {
+        "title": "knowledge-graph-js",
+        "desc": "知识网络用到的绘图函数，作为 submodule 使用",
+        "usage": "知识网络用到的绘图函数，作为 submodule 使用，被用在 sample-kc-feature-visual-map"
+      },
+    
+      {
+        "title": "knowledge-net-plan-store",
+        "desc": "用于学科知识数据库中教学计划持久化存储的 gem",
+        "usage": "用来包装 KnowledgeNetPlanStore::Tutorial 模型，用于 knowledge-camp 项目"
+      },
+    
+      {
+        "title": "knowledge-net-store",
+        "desc": "用于学科知识数据库（KnowledgeCamp）中知识点网络持久化存储的 gem",
+        "usage": "用于学科知识数据库（KnowledgeCamp）中知识点网络持久化存储的 gem"
+      },
+    
+      {
+        "title": "knowledge_camp_step",
+        "desc": "用来包装 KnowledgeCamp::Step 模型，用于 knowledge-camp 项目",
+        "usage": "用来包装 KnowledgeCamp::Step 模型，用于 knowledge-camp 项目"
+      },
+    
+      {
+        "title": "kv_service",
+        "desc": "key-value 公共存储服务。问题驱动研发过程中创建的基础数据服务。",
+        "usage": "提供 http api，使用在 key-value 存储的逻辑场景"
+      },
+    
+      {
+        "title": "lily",
+        "desc": "4ye.me 所使用的公共 javascript 和 css, 以 git submodule 的形式引用到其他工程之中。原始代码以 sass & coffee 编写。美术设计风格偏向于扁平化。",
+        "usage": "做一个团队内部使用的前端框架，方便前端开发"
+      },
+    
+      {
+        "title": "mde-4ye",
+        "desc": "可嵌入Sinatra应用的markdown编辑器(基于ace editor和第三方图片上传服务，支持语法高亮和图片粘贴).",
+        "usage": "可嵌入Sinatra应用的markdown编辑器(基于ace editor和第三方图片上传服务，支持语法高亮和图片粘贴)."
+      },
+    
+      {
+        "title": "mindpin-feeds",
+        "desc": "给 model 添加 feed 记录逻辑。从而在一些模型操作后会记录 feed。目前用在 eshare 项目中。",
+        "usage": "给 model 添加 feed 记录逻辑。从而在一些模型操作后会记录 feed。目前用在 eshare 项目中。"
+      },
+    
+      {
+        "title": "mindpin-simple-tags",
+        "desc": "用于封装 Tag 逻辑的 Ruby Gem，并且有自己定制的公共私有 Tag 机制。目前用在 eshare 项目中",
+        "usage": "用于封装 Tag 逻辑的 Ruby Gem，并且有自己定制的公共私有 Tag 机制。目前用在 eshare 项目中"
+      },
+    
+      {
+        "title": "mindpin.github.io",
+        "desc": "http://www.mindpin.com/ 网页",
+        "usage": "用来介绍 mindpin 团队的产品"
+      },
+    
+      {
+        "title": "mockups",
+        "desc": "这里用于存放各个产品的 mockup 便于在线访问",
+        "usage": "这里用于存放各个产品的 mockup 便于在线访问"
+      },
+    
+      {
+        "title": "model-state-gem",
+        "desc": "用来给模型实例标记发布/未发布状态",
+        "usage": "用来给模型实例标记发布/未发布状态"
+      },
+    
+      {
+        "title": "mongoid-pinyin",
+        "desc": "给使用 mongoid 的持久化模型中的保存了中文字符串的字段提供自动转换拼音的功能",
+        "usage": "给使用 mongoid 的持久化模型中的保存了中文字符串的字段提供自动转换拼音的功能"
+      },
+    
+      {
+        "title": "mp-nested-set",
+        "desc": "分类组件",
+        "usage": "用在 rails 项目中方便实现 分类功能"
+      },
+    
+      {
+        "title": "oauth2_example",
+        "desc": "常用 oauth2 认证示例",
+        "usage": "实现 oauth2 认证 github qq sina 的逻辑，给团队内不熟悉 oauth2 的成员提供示例"
+      },
+    
+      {
+        "title": "pin-weibo-info-graph",
+        "desc": "以图形化的方式展示新浪微博的好友关系链，词频等信息",
+        "usage": "以图形化的方式展示新浪微博的好友关系链，词频等信息"
+      },
+    
+      {
+        "title": "pinterestlistview",
+        "desc": "瀑布流布局组件",
+        "usage": "瀑布流布局组件<br/>https://github.com/mindpin/knowledge-camp/wiki/%E7%80%91%E5%B8%83%E6%B5%81%E5%B8%83%E5%B1%80%E7%BB%84%E4%BB%B6"
+      },
+    
+      {
+        "title": "pinwiki",
+        "desc": "这是一个 wiki 程序的原型，已经实现了一些基本的特性，如基础的链接语法，以及多版本。 在时机合适时，应将其进一步标准组件化。",
+        "usage": "这是一个 wiki 程序的原型，已经实现了一些基本的特性，如基础的链接语法，以及多版本。 在时机合适时，应将其进一步标准组件化。"
+      },
+    
+      {
+        "title": "problem-issues",
+        "desc": "问题驱动研发的BUG和改进建议反馈！",
+        "usage": "在该版本库 issue 中记录问题驱动研发的BUG和改进建议反馈"
+      },
+    
+      {
+        "title": "problems",
+        "desc": "问题驱动研发！！",
+        "usage": "使用该版本库的 issue wiki 来记录问题驱动研发中的问题和总结"
+      },
+    
+      {
+        "title": "products",
+        "desc": "eshare 产品介绍页",
+        "usage": "eshare 产品的介绍页，方便给客户介绍产品"
+      },
+    
+      {
+        "title": "project_build_tools",
+        "desc": "sinatra 原型工程快速生成器",
+        "usage": "sinatra 原型工程快速生成器"
+      },
+    
+      {
+        "title": "publify",
+        "desc": "尝试使用 publify ，搭建博客",
+        "usage": "该版本库 fork 了 开源项目 publify"
+      },
+    
+      {
+        "title": "range-data",
+        "desc": "选区数据存储服务。即将开发的网页内容采集插件依赖此服务。",
+        "usage": "选区数据存储服务。即将开发的网页内容采集插件依赖此服务。"
+      },
+    
+      {
+        "title": "remote-tasks",
+        "desc": "记录远程兼职的任务状态",
+        "usage": "用 issue wiki 记录远程兼职的任务状态"
+      },
+    
+      {
+        "title": "sample-data-TouchIdea",
+        "desc": "TouchIdea 工程的示例数据",
+        "usage": "用来给 TouchIdea 工程导入示例数据的脚本"
+      },
+    
+      {
+        "title": "sample-data-knowledge-points",
+        "desc": "用于学科知识数据库（KnowledgeCamp）演示需求的示例知识点结构数据，以及示例知识点内容信息。",
+        "usage": "用于学科知识数据库（KnowledgeCamp）演示需求的示例知识点结构数据，以及示例知识点内容信息。"
+      },
+    
+      {
+        "title": "sample-kc-feature-visual-map",
+        "desc": "KnowledgeCamp 产品 SAMPLE-1 用于展示可视化知识网络图的绘制",
+        "usage": "KnowledgeCamp 产品 SAMPLE-1 用于展示可视化知识网络图的绘制"
+      },
+    
+      {
+        "title": "short-comment-service",
+        "desc": "短评论服务",
+        "usage": "封装一个段评论服务，并提供js api，方便其他项目使用"
+      },
+    
+      {
+        "title": "short-url",
+        "desc": "短网址服务，用来转换短网址和处理短网址重定向。并能够针对指定网址生成二维条码。",
+        "usage": "方便团队内分享网址"
+      },
+    
+      {
+        "title": "simple-faye-server",
+        "desc": "一个 faye nodejs server",
+        "usage": "给其他项目需要实时通信的功能提供支持"
+      },
+    
+      {
+        "title": "simple-images",
+        "desc": "一种图片呈现方式。具体见：http://s.4ye.me/xIBgC7 . 这个 Gem 只是提供了一个 helper 方法。目前被用于 eshare 项目中",
+        "usage": "一种图片呈现方式。具体见：http://s.4ye.me/xIBgC7 ."
+      },
+    
+      {
+        "title": "simple-page-compoents",
+        "desc": "这个 Ruby Gem 给 rails 工程添加了一些 helper 方法。封装了一些前端组件，如表格，按钮等。目前用于 eshare 项目。",
+        "usage": "方便前端开发"
+      },
+    
+      {
+        "title": "simple_comment",
+        "desc": "封装了经常用到的评论逻辑，方便对评论进行持久化",
+        "usage": "封装了经常用到的评论逻辑，方便对评论进行持久化"
+      },
+    
+      {
+        "title": "simple_interactions",
+        "desc": "方便使用 faye 服务的一个 ruby 封装",
+        "usage": "方便使用 faye 服务的一个 ruby 封装"
+      },
+    
+      {
+        "title": "slider",
+        "desc": "移动课程/演示文稿编辑发布服务。",
+        "usage": "做一个可以不编写代码就能生成HTML5网页的工具"
+      },
+    
+      {
+        "title": "sort_char",
+        "desc": "方便用来给持久化模型排序的 组件",
+        "usage": "方便用来给持久化模型排序的 组件"
+      },
+    
+      {
+        "title": "task-page",
+        "desc": "用于记录每个人的每日任务状态。",
+        "usage": "远程工作状态下，记录团队成员每个人的每日状态任务。"
+      },
+    
+      {
+        "title": "task-scaffold",
+        "desc": "开发任务脚手架。用来撰写，布置和分发开发任务。目前仍在采集需求，还未正式开始开发。",
+        "usage": "开发任务脚手架。用来撰写，布置和分发开发任务。目前仍在采集需求，还未正式开始开发。"
+      },
+    
+      {
+        "title": "tech-exp",
+        "desc": "用来作为团队内部的知识分享",
+        "usage": "使用 issue 用来作为团队内部的知识分享"
+      },
+    
+      {
+        "title": "tex2png",
+        "desc": "把 tex 转换成 png 的 ruby 库",
+        "usage": "把 tex 转换成 png 的 ruby 库"
+      },
+    
+      {
+        "title": "touch-vote-demo",
+        "desc": "投票场景的演示",
+        "usage": "投票场景的演示"
+      },
+    
+      {
+        "title": "tour",
+        "desc": "用于给实习人员布置任务",
+        "usage": "用该版本库的 issue 给实习人员布置任务"
+      },
+    
+      {
+        "title": "ueditor.rails",
+        "desc": "方便在 rails 中使用 Baidu UEditor 进行了封装",
+        "usage": "方便在 rails 中使用 Baidu UEditor 进行了封装"
+      },
+    
+      {
+        "title": "ui-courses",
+        "desc": "团队内部 ui 相关知识分享。",
+        "usage": "团队内部 ui 相关知识分享。"
+      },
+    
+      {
+        "title": "ui-design",
+        "desc": "这里放置所有产品的UI设计稿",
+        "usage": "很多产品的原型都是基于UI和后台逻辑平行开发的形式进行，这里放置所有产品的UI设计稿"
+      },
+    
+      {
+        "title": "urlinfo-service",
+        "desc": "通过爬HTML页面或者HTTP API 获取支持的电商网站的商品信息",
+        "usage": "对 TouchIdea 项目提供商品 infocard 解析支持"
+      },
+    
+      {
+        "title": "user-auth",
+        "desc": "封装了用户认证持久化逻辑，方便开发",
+        "usage": "封装了用户认证持久化逻辑，方便开发"
+      },
+    
+      {
+        "title": "versioned_map",
+        "desc": "多版本文档对象存储",
+        "usage": "给文档存储提供多版本支持"
+      },
+    
+      {
+        "title": "video-fetcher",
+        "desc": "通过 ku6 v56 youku 网址解析出视频的真实地址",
+        "usage": "通过 ku6 v56 youku 网址解析出视频的真实地址"
+      },
+    
+      {
+        "title": "virtual-file",
+        "desc": "RubyGem 实现虚拟文件夹逻辑",
+        "usage": "实现虚拟文件夹逻辑，用在很多项目的文件管理功能上"
+      },
+    
+      {
+        "title": "web-url-collector",
+        "desc": "四叶书签服务。提供 url 快速收集工具",
+        "usage": "四叶书签服务。提供 url 快速收集工具"
+      },
+    
+      {
+        "title": "will-be-back",
+        "desc": "www.mindpin.com 停站公告页",
+        "usage": "eshare 公网版刚关闭时，用来显示停站公告页"
+      },
+    
+      {
+        "title": "work",
+        "desc": "MINDPIN 团队信息汇总页！",
+        "usage": "MINDPIN 团队信息汇总页！"
+      },
+    
+      {
+        "title": "workplace_kcgravityscrollview",
+        "desc": "封装了一个 android 重力感应可滚动视图",
+        "usage": "封装了一个 android 重力感应可滚动视图"
+      },
+    
+      {
+        "title": "yaml-to-form",
+        "desc": "根据 yaml 动态生成 form 表单的组件",
+        "usage": "方便开发团队任务工具"
+      },
+    
     {}
   ]
 }
