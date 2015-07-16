@@ -6,8 +6,12 @@ jQuery(document).on 'page:change', ->
     jQuery(this).attr 'target', '_blank'
 
   if jQuery('.sidebar').length
-    jQuery.get '/docs/sidebar.html', (html)->
-      jQuery('.sidebar').html(html)
+    if window.cached_sidebar?
+      jQuery('.sidebar').html window.cached_sidebar
+    else
+      jQuery.get '/docs/sidebar.html', (html)->
+        window.cached_sidebar = html
+        jQuery('.sidebar').html(html)
 
 show_search_result = (query, data)->
   jQuery('.page-search .list').text('')
