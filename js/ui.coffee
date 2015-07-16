@@ -5,6 +5,10 @@ jQuery(document).on 'page:change', ->
   jQuery('.main.repo a').each ->
     jQuery(this).attr 'target', '_blank'
 
+  if jQuery('.sidebar').length
+    jQuery.get '/docs/sidebar.html', (html)->
+      jQuery('.sidebar').html(html)
+
 show_search_result = (query, data)->
   jQuery('.page-search .list').text('')
 

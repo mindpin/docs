@@ -12,7 +12,7 @@
   {% assign repos = site.repos | where: 'account', page.title %}
   {% for repo in repos %}
     <li>
-      <strong><a class='repo' href="{{ site.baseurl }}/repos/{{ repo.title | downcase | replace:'_','-' }}.html">{{ repo.title }}</a></strong>
+      <strong><a class='repo' href="{{ site.baseurl }}/repos/{{ repo.title | downcase | replace:'_','-' | replace:'.','-' }}.html">{{ repo.title }}</a></strong>
       <p class='desc'>{{ repo.desc }}</p>
     </li>
   {% endfor %}

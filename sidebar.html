@@ -1,0 +1,26 @@
+---
+---
+<h3 class='site'><a href='{{ site.baseurl }}/rnd'>研发资料</a></h3>
+
+{% for account in site.data.github_accounts %}
+  {% assign key = account[0] %}
+  {% assign value = account[1] %}
+  <div class='category'>
+    <div class='name'>
+      <h4><a href="{{ site.baseurl }}/github-accounts/{{ key | downcase | replace:' ','-' }}">{{ value.name }}</a></h4>
+    </div>
+    <div class='articles'>
+      {% assign repos = site.repos | where: 'account', key %}
+      {% for repo in repos %}
+        {% if repo.last-commit %}
+          {% assign klass = 'article reviewed' %}
+        {% else %}
+          {% assign klass = 'article' %}
+        {% endif %}
+        <div class='{{ klass }}'>
+          <a href="{{ site.baseurl }}/repos/{{ repo.title | downcase | replace:'_','-' | replace:'.','-' }}.html">{{ repo.title }}</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endfor %}
