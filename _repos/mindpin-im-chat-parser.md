@@ -14,3 +14,6 @@ skills: [ruby, gem]
 threads: false
 design-usage: QQ聊天记录解析库
 ---
+
+#### 并未执行的开发内容和计划
+把QQ聊天记录用在团队协作工具

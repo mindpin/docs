@@ -14,3 +14,6 @@ skills: [rails]
 threads: false
 design-usage: 实现 oauth2 认证 github qq sina 的逻辑，给团队内不熟悉 oauth2 的成员提供示例
 ---
+
+#### 未解决的问题
+进一步优化 controller 中的代码
