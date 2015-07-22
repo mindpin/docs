@@ -14,3 +14,7 @@ skills: [java,android]
 threads: false
 design-usage: 底部滑出详情浮动框组件<br/>https://github.com/mindpin/knowledge-camp/wiki/%E5%BA%95%E9%83%A8%E6%BB%91%E5%87%BA%E8%AF%A6%E6%83%85%E6%B5%AE%E5%8A%A8%E6%A1%86%E7%BB%84%E4%BB%B6
 ---
+
+#### 未解决的问题
+1. 在2.2 2.3 的系统上会报错，原因是 nineoldandroids 的一个BUG引起的 java.lang.ClassCastException: android.view.ViewRoot
+https://github.com/mindpin/SlideWidget/issues/1

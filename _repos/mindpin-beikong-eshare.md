@@ -14,3 +14,5 @@ skills: [rails, faye, sidekiq, solr]
 threads: false
 design-usage: 跟北控合作的产品 eshare
 ---
+#### 未解决的问题
+issue 好多，https://github.com/mindpin/beikong-eshare/issues

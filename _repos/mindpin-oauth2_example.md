@@ -16,4 +16,4 @@ design-usage: 实现 oauth2 认证 github qq sina 的逻辑，给团队内不熟
 ---
 
 #### 未解决的问题
-进一步优化 controller 中的代码
+进一步优化 controller 中的代码，借鉴 image-service 中的最佳实践

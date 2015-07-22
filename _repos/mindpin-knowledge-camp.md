@@ -18,3 +18,6 @@ design-usage: 给黄职做的教学系统
 #### 值得参考的实践
 
 1. 这个工程实现了较为标准的知识点组织方式。
+
+#### 未解决的问题
+issue 好多，https://github.com/mindpin/knowledge-camp/issues

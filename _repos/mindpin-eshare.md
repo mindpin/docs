@@ -14,3 +14,6 @@ skills: [rails,solr,sidekiq]
 threads: false
 design-usage: 互动云课堂
 ---
+
+#### 未解决的问题
+issue 好多 https://github.com/mindpin/eshare/issues

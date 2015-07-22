@@ -19,6 +19,8 @@ design-usage: 四叶书签服务。提供 url 快速收集工具
 http://collect.4ye.me/
 
 #### 未解决的问题
-1. 目前显示书签列表时，会调用每个 url_info 对象上的 tags_array 方法，如果书签较多，将在后台进行很多次请求。需要想方法来减少请求数，例如批量获取；
-2. find_by_tags 需要想办法支持分页特性；
-3. 为了使得网页截图不显示在 img4ye 服务的“全部图片”里，img4ye 可能需要 scope 机制。
+1. 微博分享没有实现
+2. 搜索没有实现
+3. 复合收藏夹没有实现 https://github.com/mindpin/web-url-collector/issues/13
+4. 对四叶书签的体验优化建议 https://github.com/mindpin/problem-issues/issues/18
+5. 四叶书签打开网址操作略繁琐 https://github.com/mindpin/problem-issues/issues/14

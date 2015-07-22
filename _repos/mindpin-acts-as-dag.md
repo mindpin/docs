@@ -12,5 +12,8 @@ alternative: false
 
 skills: [ruby,gem]
 threads: [knowledge-camp]
-design-usage: 用来表达有向无环图（DAG）的数据结构,被用在 knowledge-net-plan-store 和 knowledge-net-store
+design-usage: 可以通过在 mongoid 模型上通过简单的声明实现有向无环图（DAG）的数据结构
 ---
+
+#### 值得参考的实践
+该插件的逻辑很纯粹，可以在很多场景使用
